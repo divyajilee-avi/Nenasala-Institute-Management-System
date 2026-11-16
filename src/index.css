@@ -1,0 +1,50 @@
+/* Nenasala IMS — Global Styles */
+:root {
+  --nims-primary: #1a3c6e;
+  --nims-accent:  #f4a61d;
+  --nims-sidebar: #0f2547;
+  --nims-text:    #2d3748;
+}
+
+body { font-family: 'Segoe UI', sans-serif; background: #f1f5f9; color: var(--nims-text); }
+
+/* Sidebar */
+.sidebar { width: 250px; min-height: 100vh; background: var(--nims-sidebar); transition: all .3s; }
+.sidebar .nav-link { color: rgba(255,255,255,.75); border-radius: 8px; margin: 2px 8px; padding: 10px 16px; }
+.sidebar .nav-link:hover, .sidebar .nav-link.active { background: rgba(255,255,255,.12); color: #fff; }
+.sidebar .nav-link i { width: 20px; }
+.sidebar-brand { padding: 20px 16px; border-bottom: 1px solid rgba(255,255,255,.1); }
+
+/* Top Navbar */
+.top-navbar { background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,.08); height: 60px; }
+
+/* Cards */
+.stat-card { border: none; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.08); transition: transform .2s; }
+.stat-card:hover { transform: translateY(-3px); }
+.stat-icon { width: 52px; height: 52px; border-radius: 12px; display:flex; align-items:center; justify-content:center; font-size: 1.4rem; }
+
+/* Tables */
+.table thead th { background: var(--nims-primary); color: #fff; font-weight: 600; border: none; }
+.table-hover tbody tr:hover { background: #eef3fb; }
+
+/* Login Page */
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a3c6e 0%, #2563eb 60%, #1e40af 100%);
+}
+
+/* Public pages — remove default body bg */
+body { background: #fff; }
+
+/* Badges */
+.badge-active   { background: #d1fae5; color: #065f46; }
+.badge-inactive { background: #fee2e2; color: #991b1b; }
+.badge-pending  { background: #fef3c7; color: #92400e; }
+.badge-paid     { background: #d1fae5; color: #065f46; }
+.badge-overdue  { background: #fee2e2; color: #991b1b; }
+
+/* Misc */
+.page-title { font-size: 1.4rem; font-weight: 700; color: var(--nims-primary); }
+.content-area { flex: 1; padding: 24px; overflow-y: auto; }
+.btn-primary  { background: var(--nims-primary); border-color: var(--nims-primary); }
+.btn-primary:hover { background: #14305a; border-color: #14305a; }
